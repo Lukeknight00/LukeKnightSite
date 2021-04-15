@@ -33,7 +33,7 @@ collections:
     identifier-field: name
     create: true
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "plant-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "name"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Common Name", name: "commonname", widget: "string"}
       - {label: "Scientific Name", name: "sciencename", widget: "string"}
