@@ -59,7 +59,7 @@ const PlantPost = ({ data }) => {
 
   return (
     <Layout>
-      <PlantTemplate
+      <PlantPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
