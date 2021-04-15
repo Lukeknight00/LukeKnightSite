@@ -35,9 +35,11 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "plant-post"}
       - {label: "Name", name: "name", widget: "string"}
+      - {label: "Common Name", name: "commonname", widget: "string"}
+      - {label: "Scientific Name", name: "sciencename", widget: "string"}
       - {label: "Acquisition Date", name: "aqdate", widget: "datetime", date_format: "DD.MM.YYYY"}
       - {label: "Blurb", name: "blurb", widget: "text"}
-      - {label: "Roatate?", name: "roatate", widget: "boolean"}
+      - {label: "Roatate?", name: "roatate", widget: "boolean"} 
       - {label: "Last Watered", name: "lastwatered", widget: "datetime"}
       - {label: "Last Fertilized", name: "lastfertilized", widget: "datetime"}
       - {label: "Image", name: "image", widget: image}
