@@ -27,7 +27,6 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
     - name: "plant"
     label: "Plant"
     folder: "src/pages/plant"
@@ -43,10 +42,7 @@ collections:
       - {label: "Image", name: "image", widget: image}
       - {label: "pots size", name: "potsize", widget: "text"}
       - {label: "description", name: "description", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-
-
-      
+      - {label: "Tags", name: "tags", widget: "list"}    
   - name: "pages"
     label: "Pages"
     files:
