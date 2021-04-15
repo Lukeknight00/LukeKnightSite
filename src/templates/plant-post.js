@@ -11,7 +11,8 @@ export const PlantPostTemplate = ({
   contentComponent,
   description,
   tags,
-  title,
+  name,
+  sciencename,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
@@ -22,8 +23,11 @@ export const PlantPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
+            <h1 className="name is-size-2 has-text-weight-bold is-bold-light">
+              {name}
+            </h1>
+            <h1 className="sciencename is-size-2 has-text-weight-bold is-bold-light">
+              {sciencename}
             </h1>
             <p>{description}</p>
             <PostContent content={content} />
