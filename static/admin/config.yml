@@ -31,6 +31,7 @@ collections:
     label: "Plant"
     folder: "src/pages/plant"
     identifier-field: name
+    slug: "{{name}}"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "plant-post"}
