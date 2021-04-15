@@ -27,7 +27,7 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-    - name: "plant"
+  - name: "plant"
     label: "Plant"
     folder: "src/pages/plant"
     create: true
