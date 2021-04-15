@@ -28,6 +28,25 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+    - name: "plant"
+    label: "Plant"
+    folder: "src/pages/plant"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "acquisition Date", name: "aqdate", widget: "datetime"}
+      - {label: "blurb", name: "blurb", widget: "text"}
+      - {label: "roatate", name: "roatate", widget: "boolean"}
+      - {label: "last watered", name: "lastwatered", widget: "datetime"}
+      - {label: "last fertilized", name: "lastfertilized", widget: "datetime"}
+      - {label: "Image", name: "image", widget: image}
+      - {label: "pots size", name: "potsize", widget: "text"}
+      - {label: "description", name: "description", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
+
+      
   - name: "pages"
     label: "Pages"
     files:
