@@ -41,7 +41,7 @@ export const PlantPostTemplate = ({
             }}
              ></div>
             <h1 className="sciencename is-size-2 has-text-weight-bold is-bold-light">
-              {sciencename}
+              About the <i>{sciencename}</i>
             </h1>
             <p>{description}</p>
             <PostContent content={content} />
@@ -67,8 +67,9 @@ export const PlantPostTemplate = ({
 PlantPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  description: PropTypes.markdownRemark,
+  description: PropTypes.string,
   name: PropTypes.string,
+  sciencename: PropTypes.string,
   helmet: PropTypes.object,
 }
 

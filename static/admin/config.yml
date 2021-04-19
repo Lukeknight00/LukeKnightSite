@@ -43,8 +43,8 @@ collections:
       - {label: "Last Watered", name: "lastwatered", widget: "datetime"}
       - {label: "Last Fertilized", name: "lastfertilized", widget: "datetime"}
       - {label: "Image", name: "image", widget: image}
-      - {label: "pot's size", name: "potsize", widget: "text"}
-      - {label: "description", name: "description", widget: "markdown"}
+      - {label: "Pot's Size", name: "potsize", widget: "text"}
+      - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}    
   - name: "pages"
     label: "Pages"
