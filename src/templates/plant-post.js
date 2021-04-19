@@ -67,7 +67,7 @@ export const PlantPostTemplate = ({
 PlantPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  description: PropTypes.string,
+  description: PropTypes.html,
   name: PropTypes.string,
   sciencename: PropTypes.string,
   helmet: PropTypes.object,
