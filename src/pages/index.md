@@ -2,19 +2,12 @@
 templateKey: index-page
 title: "Luke Knight "
 image: /img/table-mountain-5390267_960_720.jpg
-heading: Great coffee with a conscience
+heading: "things "
 subheading: a website about the {{link}}
 mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
+  title: Why
+  description: ???
+description: asd
 intro:
   blurbs:
     - image: /img/coffee.png
