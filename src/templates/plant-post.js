@@ -4,7 +4,6 @@ import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
-import Image from "../components/image"
 import Content, { HTMLContent } from '../components/Content'
 
 export const PlantPostTemplate = ({
