@@ -100,7 +100,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        image
+        image { ... }
         name
         description
         tags
