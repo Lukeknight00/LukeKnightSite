@@ -4,6 +4,7 @@ import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
+import Image from "../components/image"
 import Content, { HTMLContent } from '../components/Content'
 
 export const PlantPostTemplate = ({
@@ -100,7 +101,11 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        image { ... }
+        image { 
+          childImageSharp {
+                    fluid(maxWidth: 120, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
         name
         description
         tags
