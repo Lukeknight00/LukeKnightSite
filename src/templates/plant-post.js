@@ -13,6 +13,7 @@ export const PlantPostTemplate = ({
   tags,
   name,
   sciencename,
+  image,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
@@ -21,6 +22,7 @@ export const PlantPostTemplate = ({
     <section className="section">
       {helmet || ''}
       <div className="container content">
+        <div>{image}</div>
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="name is-size-2 has-text-weight-bold is-bold-light">
