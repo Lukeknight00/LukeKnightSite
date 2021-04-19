@@ -67,7 +67,7 @@ export const PlantPostTemplate = ({
 PlantPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  description: PropTypes.string,
+  description: PropTypes.markdownRemark,
   name: PropTypes.string,
   helmet: PropTypes.object,
 }
@@ -117,7 +117,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         image { 
           childImageSharp {
-            fluid(maxWidth: 120, quality: 100) {
+            fluid(maxWidth: 1440, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
