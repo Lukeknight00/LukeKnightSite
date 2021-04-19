@@ -28,12 +28,12 @@ export const PlantPostTemplate = ({
             <h1 className="name is-size-2 has-text-weight-bold is-bold-light">
               {name}
             </h1>
-            {post.frontmatter.image ? (
+            {image ? (
                     <div className="image-thumbnail">
                       <PreviewCompatibleImage
                         imageInfo={{
-                          image: post.frontmatter.image,
-                          alt: `image thumbnail for post ${post.frontmatter.name}`,
+                          image: image,
+                          alt: `image thumbnail for post ${name}`,
                         }}
                       />
                     </div>
