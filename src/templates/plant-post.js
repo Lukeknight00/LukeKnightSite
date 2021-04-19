@@ -74,6 +74,8 @@ PlantPostTemplate.propTypes = {
 
 const PlantPost = ({ data }) => {
   const { markdownRemark: post } = data
+  const { frontmatter } = data.markdownRemark
+
 
   return (
     <Layout>
