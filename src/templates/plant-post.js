@@ -56,7 +56,7 @@ PlantPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  title: PropTypes.string,
+  name: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -71,7 +71,7 @@ const PlantPost = ({ data }) => {
         description={post.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Blog">
-            <title>{`${post.frontmatter.title}`}</title>
+            <title>{`${post.frontmatter.name}`}</title>
             <meta
               name="description"
               content={`${post.frontmatter.description}`}
@@ -79,7 +79,7 @@ const PlantPost = ({ data }) => {
           </Helmet>
         }
         tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
+        title={post.frontmatter.name}
       />
     </Layout>
   )
