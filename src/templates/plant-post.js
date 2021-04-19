@@ -103,9 +103,11 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         image { 
           childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
+            fluid(maxWidth: 120, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         name
         description
         tags
