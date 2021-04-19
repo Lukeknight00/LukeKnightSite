@@ -30,16 +30,16 @@ export const PlantPostTemplate = ({
             <h1 className="name is-size-2 has-text-weight-bold is-bold-light">
               {name}
             </h1>
-            {image ? (
-                    <div className="image-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: image,
-                          alt: `image thumbnail for post ${name}`,
-                        }}
-                      />
-                    </div>
-                  ) : null}
+            <div
+            className="full-width-image margin-top-0"
+            style={{
+              backgroundImage: `url(${
+                !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+              })`,
+              backgroundPosition: `top left`,
+              backgroundAttachment: `fixed`,
+            }}
+             ></div>
             <h1 className="sciencename is-size-2 has-text-weight-bold is-bold-light">
               {sciencename}
             </h1>
@@ -79,6 +79,7 @@ const PlantPost = ({ data }) => {
     <Layout>
       <PlantPostTemplate
         content={post.html}
+        image={frontmatter.image}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
