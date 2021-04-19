@@ -70,7 +70,7 @@ const PlantPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | Luke's Plants">
             <title>{`${post.frontmatter.name}`}</title>
             <meta
               name="description"
@@ -79,7 +79,7 @@ const PlantPost = ({ data }) => {
           </Helmet>
         }
         tags={post.frontmatter.tags}
-        title={post.frontmatter.name}
+        name={post.frontmatter.name}
       />
     </Layout>
   )
@@ -100,7 +100,8 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        title
+        image
+        name
         description
         tags
       }
