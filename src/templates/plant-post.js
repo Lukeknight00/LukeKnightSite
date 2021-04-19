@@ -85,7 +85,7 @@ const PlantPost = ({ data }) => {
         image={frontmatter.image}
         contentComponent={HTMLContent}
         sciencename={post.frontmatter.sciencename}
-        description={HTMLContent}
+        description={post.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Luke's Plants">
             <title>{`${post.frontmatter.name}`}</title>
