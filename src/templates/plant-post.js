@@ -22,12 +22,22 @@ export const PlantPostTemplate = ({
     <section className="section">
       {helmet || ''}
       <div className="container content">
-        <div>{image}</div>
+        
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h1 className="name is-size-2 has-text-weight-bold is-bold-light">
               {name}
             </h1>
+            {post.frontmatter.image ? (
+                    <div className="image-thumbnail">
+                      <PreviewCompatibleImage
+                        imageInfo={{
+                          image: post.frontmatter.image,
+                          alt: `image thumbnail for post ${post.frontmatter.name}`,
+                        }}
+                      />
+                    </div>
+                  ) : null}
             <h1 className="sciencename is-size-2 has-text-weight-bold is-bold-light">
               {sciencename}
             </h1>
@@ -108,6 +118,7 @@ export const pageQuery = graphql`
           }
         }
         name
+        sciencename
         description
         tags
       }
