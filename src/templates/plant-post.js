@@ -67,7 +67,7 @@ export const PlantPostTemplate = ({
 PlantPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  description: PropTypes.html,
+  description: PropTypes.string,
   name: PropTypes.string,
   sciencename: PropTypes.string,
   helmet: PropTypes.object,
@@ -85,7 +85,7 @@ const PlantPost = ({ data }) => {
         image={frontmatter.image}
         contentComponent={HTMLContent}
         sciencename={post.frontmatter.sciencename}
-        description={post.frontmatter.description}
+        description={HTMLContent}
         helmet={
           <Helmet titleTemplate="%s | Luke's Plants">
             <title>{`${post.frontmatter.name}`}</title>
