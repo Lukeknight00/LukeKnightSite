@@ -4,14 +4,17 @@ name: Monty
 commonname: "Monstera "
 sciencename: Monstera Deliciosa
 aqdate: 2019-09-11T17:07:34.318Z
-blurb: Monty was the first large houseplant I owned!
+description: Monty was the first large houseplant I owned!
 roatate: true
 lastwatered: 2021-04-15T17:08:45.010Z
 lastfertilized: 2021-04-15T17:08:46.322Z
 image: /img/monty.jpg
+image2: /img/monty.jpg
 potsize: 14in Terracotta
-description: >-
-  
+tags:
+  - Monstera
+  - Tropical
+--- 
 
   The plant may be confused with *[Thaumatophyllum bipinnatifidum](https://en.wikipedia.org/wiki/Thaumatophyllum_bipinnatifidum "Thaumatophyllum bipinnatifidum")*, known as the Split-leaf Philodendron or Tree Philodendron, as they have similar leaves and growing habits. <!--StartFragment-->
 
@@ -22,8 +25,3 @@ description: >-
   Wild seedlings grow towards the darkest area they can grow until they find a tree trunk, then start to grow up towards the light, creeping up the tree.[](https://en.wikipedia.org/wiki/Monstera_deliciosa#cite_note-uconn-9)
 
 
-  \-Wikipedia
-tags:
-  - Monstera
-  - Tropical
----
