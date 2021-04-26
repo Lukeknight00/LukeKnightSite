@@ -17,6 +17,11 @@ export const PlantPostTemplate = ({
   image,
   image2,
   helmet,
+  aqdate,
+  lastwatered,
+  lastfertilized,
+  potsize,
+  rotate,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -39,14 +44,20 @@ export const PlantPostTemplate = ({
                 })`,
                 height: "70vh",
                 backgroundPosition: `top left` ,
+                backgroundRepeat: 'no-repeat',
                 backgroundAttachment: `fixed`,
               }}
              />
 
           </div>
           
-          <div className="column is-4 rounded " style={{color: "whiteSmoke",backgroundColor: "rgba(63, 191, 127, 0.8)",borderRadius:"15px", paddingTop:"1em", marginTop:"15vh", height:"100%", textAlign:"center"}}>
-            <h1 style={{color: "whiteSmoke"}}> About {name}</h1> <p>{description}</p>
+          <div className="column is-5 rounded " style={{color: "whiteSmoke",backgroundColor: "rgba(63, 191, 127, 0.8)",borderRadius:"15px", paddingTop:"1em", marginTop:"1vh", height:"100%", textAlign:"left", fontSize:'120%'}}>
+            <h1 style={{color: "whiteSmoke"}}> About {name}</h1> 
+            <p>{description}</p>
+            <p>I got Monty in {aqdate}</p>
+            <p>Monty was last watered: {lastwatered}</p>
+            <p>Monty was last fertilized: {lastfertilized}</p>
+            <p>Monty currently lives in a {potsize} pot {rotate ? "which I rotate weekly." : "."} </p>
           </div>
           
         </div>
@@ -60,14 +71,16 @@ export const PlantPostTemplate = ({
                   backgroundPosition: "center" ,
                   height: '100%',
                   width: '100%',
+                  backgroundRepeat: 'no-repeat',
                   backgroundSize: '100%',
+                  minHeight: '500px',
                 }}
               />
  
               
             </div>
             
-            <div className="column is-5 is-offset-1" style={{}}>
+            <div className="column is-5" style={{}}>
               <h1 className="sciencename is-size-2 has-text-weight-bold is-bold-light">
                       About the <i>{sciencename} </i> <br/>
                       <p style={{fontSize:"30%"}}>from <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia </a> </p>
@@ -94,6 +107,7 @@ export const PlantPostTemplate = ({
 }
 
 PlantPostTemplate.propTypes = {
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -101,6 +115,7 @@ PlantPostTemplate.propTypes = {
   commonname: PropTypes.string,
   sciencename: PropTypes.string,
   helmet: PropTypes.object,
+  image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 const PlantPost = ({ data }) => {
@@ -113,7 +128,11 @@ const PlantPost = ({ data }) => {
       <PlantPostTemplate
         content={post.html}
         image={frontmatter.image}
-        
+        aqdate={post.frontmatter.aqdate}
+        lastwatered={post.frontmatter.lastwatered}
+        lastfertilized={post.frontmatter.lastfertilized}
+        potsize={post.frontmatter.potsize}
+        rotate={post.frontmatter.rotate}
         contentComponent={HTMLContent}
         sciencename={post.frontmatter.sciencename}
         commonname={post.frontmatter.commonname}
@@ -136,7 +155,9 @@ const PlantPost = ({ data }) => {
 
 PlantPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.object,
+    }),
   }),
 }
 
@@ -164,6 +185,11 @@ export const pageQuery = graphql`
             }
         }
         name
+        aqdate(formatString: "MMMM, YYYY")
+        lastwatered(formatString: "MMMM DD")
+        lastfertilized(formatString: "MMMM DD")
+        potsize
+        rotate
         commonname
         sciencename
         description

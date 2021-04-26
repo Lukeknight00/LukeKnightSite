@@ -39,11 +39,11 @@ collections:
       - {label: "Scientific Name", name: "sciencename", widget: "string"}
       - {label: "Acquisition Date", name: "aqdate", widget: "datetime", date_format: "DD.MM.YYYY"}
       - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Roatate?", name: "roatate", widget: "boolean"} 
+      - {label: "Rotate?", name: "rotate", widget: "boolean"} 
       - {label: "Last Watered", name: "lastwatered", widget: "datetime"}
       - {label: "Last Fertilized", name: "lastfertilized", widget: "datetime"}
       - {label: "Image", name: "image", widget: image}
-      - {label: "Image 2", name: "image2", widget: object}
+      - {label: "Image 2", name: "image2", widget: image}
       - {label: "Pot's Size", name: "potsize", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}    
