@@ -39,7 +39,7 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
+              <h1>Interested in reaching me?<p style={{fontSize: "70%"}}> Fill out the form below and I will be sure to get back to you ASAP!</p></h1>
               <form
                 name="contact"
                 method="post"
@@ -57,7 +57,7 @@ export default class Index extends React.Component {
                   </label>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={'name'}>
+                  <label className="label" htmlFor={'name'} >
                     Your name
                   </label>
                   <div className="control">
@@ -68,6 +68,7 @@ export default class Index extends React.Component {
                       onChange={this.handleChange}
                       id={'name'}
                       required={true}
+                      style={{minWidth:"20vw", maxWidth:"30vw",}}
                     />
                   </div>
                 </div>
@@ -83,6 +84,7 @@ export default class Index extends React.Component {
                       onChange={this.handleChange}
                       id={'email'}
                       required={true}
+                      style={{minWidth:"30vw", maxWidth:"50vw", }}
                     />
                   </div>
                 </div>
@@ -97,6 +99,7 @@ export default class Index extends React.Component {
                       onChange={this.handleChange}
                       id={'message'}
                       required={true}
+                      style={{minWidth:"30vw", maxWidth:"70vw", }}
                     />
                   </div>
                 </div>
