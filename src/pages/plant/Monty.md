@@ -6,8 +6,8 @@ sciencename: Monstera Deliciosa
 aqdate: 2019-09-11T17:07:34.318Z
 description: Monty was the first large houseplant that I ever owned!
 rotate: true
-lastwatered: 2021-04-15T17:08:45.010Z
-lastfertilized: 2021-04-15T17:08:46.322Z
+lastwatered: 2021-04-26T17:55:38.618Z
+lastfertilized: 2021-04-26T17:55:39.419Z
 image: /img/monty.jpg
 image2: /img/monty.jpg
 potsize: 14in Terracotta
