@@ -5,7 +5,7 @@ commonname: "Monstera "
 sciencename: Monstera Deliciosa
 aqdate: 2019-09-11T17:07:34.318Z
 description: Monty was the first large houseplant that I ever owned!
-rotate: false
+rotate: true
 lastwatered: 2021-04-15T17:08:45.010Z
 lastfertilized: 2021-04-15T17:08:46.322Z
 image: /img/monty.jpg
