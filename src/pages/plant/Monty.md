@@ -2,6 +2,7 @@
 templateKey: plant-post
 name: Monty
 commonname: "Monstera "
+title: Monty
 sciencename: Monstera Deliciosa
 aqdate: 2019-09-11T17:07:34.318Z
 description: Monty was the first large houseplant that I ever owned!

@@ -7,7 +7,8 @@ featuredpost: true
 hatecrime: false
 featuredimage: /img/p5js.svg
 tags:
-  - flavor
-  - tasting
+  - sketch
+  - green beans
 ---
+### Colorful spheres
 <iframe src="https://editor.p5js.org/Lukeknight00/embed/ptgdZBaEP"></iframe>
