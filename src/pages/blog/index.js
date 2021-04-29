@@ -25,7 +25,7 @@ export default class BlogIndexPage extends React.Component {
       >
         Creative Coding, Game Development, and more!
       </h1>
-          <iframe style={{backgroundColor: "transparent", allowTransparency: "true",pointerEvents:"none" ,width:"100vw", height:"50vh"}} src="https://editor.p5js.org/Lukeknight00/embed/qwQZj4vZG">
+          <iframe style={{backgroundColor: "transparent", allowTransparency: "true",overflow:"hidden",pointerEvents:"none" ,width:"100vw", height:"50vh", border: "none",}} src="https://editor.p5js.org/Lukeknight00/embed/qwQZj4vZG">
           
           </iframe>
           
