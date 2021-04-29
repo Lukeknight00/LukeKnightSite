@@ -8,19 +8,23 @@ export default class BlogIndexPage extends React.Component {
     return (
       <Layout>
         <div
-          className="full-width-image-container margin-top-0"
+          className="full-width-image-container margin-top-0 "
           style={{
             backgroundImage:" url('https://editor.p5js.org/Lukeknight00/embed/qwQZj4vZG')",
           }}
         ><h1
-        className="has-text-weight-bold is-size-2"
+        className="has-text-weight-bold is-size-1 "
         style={{
           position: "absolute",
           boxShadow: '0.5rem 0 0 #a7fffff, -0.5rem 0 0 #a7fffff',
-          backgroundColor: ' rgba(0, 109, 255, 0.71)',
-          borderRadius: 90,
+          backgroundColor: ' rgba(0, 109, 255, 0.6)',
+          borderRadius: 25,
+          width: "100%",
+          maxWidth: "90vw",
+          maxWidth: 620,
+          
           color: 'White',
-          padding: '1rem',
+          padding: '1.2rem',
         }}
       >
         Creative Coding, Game Development, and more!
