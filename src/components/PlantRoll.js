@@ -41,7 +41,7 @@ class PlantRoll extends React.Component {
                         position: 'absolute',
                         bottom: '8px',
                         right: '16px', 
-                        color: 'black',
+                        color: 'White',
                         backgroundColor: "rgb(255,255,255,0.3)",
                         borderRadius: 10,
                         padding: '5px'
