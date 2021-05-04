@@ -12,6 +12,7 @@ export const PlantPostTemplate = ({
   description,
   tags,
   name,
+  title,
   commonname,
   sciencename,
   image,
@@ -28,7 +29,7 @@ export const PlantPostTemplate = ({
   return (
     <section className="section">
       {helmet || ''}
-      
+        <Content title={name}/>
       <div className="container content">
         <div className="columns">
           
@@ -127,6 +128,7 @@ const PlantPost = ({ data }) => {
     <Layout>
       <PlantPostTemplate
         content={post.html}
+        title={frontmatter.name}
         image={frontmatter.image}
         aqdate={post.frontmatter.aqdate}
         lastwatered={post.frontmatter.lastwatered}
@@ -174,6 +176,7 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 1440, quality: 100) {
               ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluidLimitPresentationSize
             }
           }
         }
@@ -181,6 +184,7 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 700, quality: 100) {
                 ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluidLimitPresentationSize
               }
             }
         }
@@ -194,6 +198,7 @@ export const pageQuery = graphql`
         sciencename
         description
         tags
+        title
       }
     }
   }
