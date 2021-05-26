@@ -45,14 +45,14 @@ const Links = ({ data }) => {
   )
 }
 
-AboutPage.propTypes = {
+Links.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default AboutPage
+export default Links
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
+export const Links = graphql`
+  query Links($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
