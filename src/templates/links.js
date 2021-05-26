@@ -51,7 +51,7 @@ Links.propTypes = {
 
 export default Links
 
-export const Links = graphql`
+export const LinksQuery = graphql`
   query Links($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html

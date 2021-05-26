@@ -1,5 +1,5 @@
 ---
-templateKey: link
+templateKey: links
 title: Web Developer
 description: Cal Poly Pomona had phenomenal professors, who were fundamental in
   my understanding of web development. My understanding has continued to grow

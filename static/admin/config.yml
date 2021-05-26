@@ -33,7 +33,7 @@ collections:
     folder: "src/pages/links"
     create: true
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "link"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "links"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "URL", name: "url", widget: "string"}
