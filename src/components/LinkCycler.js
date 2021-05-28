@@ -8,15 +8,14 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class LinkCycler extends React.Component {
    state={
-       currentID : "2d24d54e-4326-5757-96cf-59959c3cc704",
+       currentID : "0",       //default link
+
        IdArr : [],
-       //default link
    }
     //mounts and unmounts the interval function
     componentDidMount() {
         const { data } = this.props
         const { edges: links } = data.allMarkdownRemark
-        this.setState({currentID: "2d24d54e-4326-5757-96cf-59959c3cc704"})
         this.setState({ IdArr : this.pushArray(links,this.state.IdArr)})//populates the array
         this.interval = setInterval( this.ChangeID.bind(this), 1800)
 
@@ -44,9 +43,13 @@ class LinkCycler extends React.Component {
                         <a href={linked.frontmatter.url} 
                             >{linked.frontmatter.title }
                         </a> ) : null}
+                         
                     </div> 
                     )  
-                )} 
+                )}
+                {  this.state.currentID === "0" ? (
+                    <span>Guy who built this Website!
+                    </span> ) : null}  
             </div>
         )
 
