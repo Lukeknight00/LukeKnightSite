@@ -30,6 +30,7 @@ export const IndexPageTemplate = ({
         style={{
           display: 'flex',
           height: '150px',
+          minWidth:'50vw',
           lineHeight: '1',
           justifyContent: 'space-around',
           alignItems: 'left',
@@ -57,6 +58,7 @@ export const IndexPageTemplate = ({
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
+            colorAdjust: 100,
           }}
         >
           The <LinkCycler />
