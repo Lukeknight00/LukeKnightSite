@@ -17,7 +17,7 @@ class LinkCycler extends React.Component {
         const { data } = this.props
         const { edges: links } = data.allMarkdownRemark
         this.setState({ IdArr : this.pushArray(links,this.state.IdArr)})//populates the array
-        this.interval = setInterval( this.ChangeID.bind(this), 1000)
+        this.interval = setInterval( this.ChangeID.bind(this), 1800)
 
     }
     componentWillUnmount() {
