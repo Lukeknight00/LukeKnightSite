@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
+import LinkCycler from '../components/LinkCycler'
 import Layout from '../components/Layout'
-import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import PlantRoll from '../components/PlantRoll'
 
@@ -60,8 +59,9 @@ export const IndexPageTemplate = ({
             padding: '0.25em',
           }}
         >
-          {subheading}
+          The <LinkCycler />
         </h3>
+        
       </div>
     </div>
     <section className="section section--gradient" >
