@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
 
@@ -35,21 +35,20 @@ class LinkCycler extends React.Component {
     console.log("Current ID: " +  this.state.currentID);
 
         return( 
-            <div className="LinkTitle" 
-                 >
+            <div className="LinkTitle" style={{textAlign: "center" }}>
                 {links && links.map(({ node: linked }) => (
-                    <div  key={linked.id} style={{textColor: 'red'}} >
+                    <div  key={linked.id}  >
                         {  linked.id === this.state.currentID ? (
-                        <a href={linked.frontmatter.url} 
-                            >{linked.frontmatter.title }
+                        <a href={linked.frontmatter.url} style={{color: 'black', minHeight: '50px'}}
+                            > <GatsbyImage image={getImage(linked.frontmatter.icon.childImageSharp)} alt="X" /> {linked.frontmatter.title } 
                         </a> ) : null}
                          
                     </div> 
                     )  
                 )}
                 {  this.state.currentID === "0" ? (
-                    <span>Guy who built this Website!
-                    </span> ) : null}  
+                    <p style={{ minHeight: '30px'}} > Guy who built this Website!
+                    </p> ) : null}  
             </div>
         )
 
@@ -109,12 +108,12 @@ export default () => (
                     title
                     url
                     icon {
-                    childImageSharp {
-                        fluid(maxWidth: 1080, quality: 100) {
-                            ...GatsbyImageSharpFluid
-                            ...GatsbyImageSharpFluidLimitPresentationSize
-                          }
-                    }
+                        childImageSharp {
+                            gatsbyImageData(width: 30
+                                placeholder: BLURRED
+                                formats: [AUTO, WEBP, AVIF])
+                        }
+                 
                     }
                 }
                 }
