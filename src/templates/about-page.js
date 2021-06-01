@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import maFace from "../../static/img/luke.jpg"
+
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -16,7 +18,13 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <PageContent className="content" content={content} />
+              <div className="column is-6">
+                
+                <PageContent className="content" content={content} />
+              </div>
+              <div className="column is-6">
+               <img src={maFace} alt="me!"></img>
+              </div>
             </div>
           </div>
         </div>
