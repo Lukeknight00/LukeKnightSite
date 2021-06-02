@@ -23,14 +23,6 @@ tags:
 
 <iframe src="https://editor.p5js.org/Lukeknight00/embed/yRjH7Z-kL" style="width:50vw;height:60vh;overflow:hidden;" frameborder="0" ></iframe>
 
-         
-
-
-
-
-
-
-
                 <h4>These flies will avoid each other unless they are alone, then they rejoin the group. In effect it is a (bad)uniform random distribution simulator. </h4>
 
 <iframe src="https://editor.p5js.org/Lukeknight00/embed/6G1mr0Sb3" style="width:50vw;height:60vh;overflow:hidden;" frameborder="0" ></iframe>
@@ -39,19 +31,9 @@ tags:
 
 <iframe src="https://editor.p5js.org/Lukeknight00/embed/aKCnGMrPc"style="width:70vw;height:80vh;overflow:hidden;" frameborder="0"></iframe>
 
-                
-
- 
-
                 <h4>I used gaussian noise, and a friends help to make some cool color maps.  </h4>
 
-<iframe src="https://editor.p5js.org/Lukeknight00/embed/qwQZj4vZG"style="width:100vw;height:100vh;overflow:hidden;" frameborder="0"></iframe>
-
-
-
-
-
-
+<iframe src="https://editor.p5js.org/Lukeknight00/embed/qwQZj4vZG"style="width:100vw;height:100vh;overflow:hidden; margin-left:-15vw" frameborder="0"></iframe>
 
 #### Colorful spheres
 
