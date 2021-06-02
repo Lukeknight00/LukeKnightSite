@@ -33,7 +33,7 @@ tags:
 
                 <h4>I used gaussian noise, and a friends help to make some cool color maps.  </h4>
 
-<iframe src="https://editor.p5js.org/Lukeknight00/embed/qwQZj4vZG"style="width:100vw;height:100vh;overflow:hidden; margin-left:-15vw" frameborder="0"></iframe>
+<iframe src="https://editor.p5js.org/Lukeknight00/embed/qwQZj4vZG"style="min-width:100%;width:100vw;min-height:100%;height:100vh;overflow:hidden; margin-left:-15vw" frameborder="0"></iframe>
 
 #### Colorful spheres
 
