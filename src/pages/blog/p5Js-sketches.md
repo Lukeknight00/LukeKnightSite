@@ -8,7 +8,7 @@ description: >-
 
   When I first started with the P5.js library I made some cool sketches, to get the hang of the syntax of JavaScript as well as well the P5.js library.
 featuredpost: true
-featuredimage: /img/p5js.svg
+featuredimage: /img/seo.png
 tags:
   - sketch
   - P5.js
