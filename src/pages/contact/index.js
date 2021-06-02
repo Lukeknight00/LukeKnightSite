@@ -115,9 +115,10 @@ export default class Index extends React.Component {
                   </form>
                 </div>
               </div>
-              <div className="column is-6" style={{borderLeft:"black solid 10px",borderTop:"black solid 10px"}}>
+              <div className="column is-6" >
                 click to restart
-                <iframe src="https://editor.p5js.org/Lukeknight00/embed/w2MLcLZqW" style={{position: 'relative', width: '100%', height: '100%', minHeight:"70vh"}} ></iframe>
+                <iframe src="https://editor.p5js.org/Lukeknight00/embed/w2MLcLZqW" style={{position: 'relative', width: '100%', height: '70vh', minHeight:"70vh"}} ></iframe>
+                My twist on the classic game of life
               </div>
             </div>
             </div>
