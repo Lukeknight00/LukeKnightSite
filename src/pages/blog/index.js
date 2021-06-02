@@ -29,7 +29,7 @@ export default class BlogIndexPage extends React.Component {
           margin: '1rem',
         }}
       >
-        Creative Coding, Game Development, and more coding adventures!
+        Creative Coding, Game and Web Development, plus more coding adventures!
       </h1>
           <iframe style={{backgroundColor: "transparent", allowTransparency: "true",overflow:"hidden",pointerEvents:"none" ,width:"100vw", height:"50vh", border: "none",}} src="https://editor.p5js.org/Lukeknight00/embed/qwQZj4vZG">
           
