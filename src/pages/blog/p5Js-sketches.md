@@ -17,11 +17,11 @@ tags:
 
                 Click to start a timer.
 
-<iframe src="https://editor.p5js.org/Lukeknight00/embed/5vdbGs2Mn"> </iframe>           
+<iframe src="https://editor.p5js.org/Lukeknight00/embed/5vdbGs2Mn"style="width:50vw;height:30vh;overflow:hidden;" frameborder="0"  > </iframe>           
 
 ### This was my initial welcome animation on my old website
 
-<iframe src="https://editor.p5js.org/Lukeknight00/embed/yRjH7Z-kL" style="width:100%;height:100%;overflow:hidden;" frameborder="0"></iframe>
+<iframe src="https://editor.p5js.org/Lukeknight00/embed/yRjH7Z-kL" style="width:50vw;height:60vh;overflow:hidden;" frameborder="0" ></iframe>
 
          
 
@@ -33,17 +33,21 @@ tags:
 
                 <h4>These flies will avoid each other unless they are alone, then they rejoin the group. In effect it is a (bad)uniform random distribution simulator. </h4>
 
-<iframe src="https://editor.p5js.org/Lukeknight00/embed/6G1mr0Sb3" ></iframe>
+<iframe src="https://editor.p5js.org/Lukeknight00/embed/6G1mr0Sb3" style="width:50vw;height:60vh;overflow:hidden;" frameborder="0" ></iframe>
 
-                <h4>This was on the way to the flys, these are fleyes</h4>
+                <h4>This was on the way to the flys, these are Fleyes!</h4><h4>It was before there was proper avoidance, also an experiment with trails</h4>
 
+<iframe src="https://editor.p5js.org/Lukeknight00/embed/aKCnGMrPc"style="width:70vw;height:80vh;overflow:hidden;" frameborder="0"></iframe>
 
-
-                <h4>This was before there was proper avoidance, also an experiment with trails</h4>
+                
 
  
 
-                <h4>I used gaussian noise, and a friends help to make some cool images, here they are with a standard deviation of 5, 10 and 15 respectively  </h4>
+                <h4>I used gaussian noise, and a friends help to make some cool color maps.  </h4>
+
+<iframe src="https://editor.p5js.org/Lukeknight00/embed/qwQZj4vZG"style="width:100vw;height:100vh;overflow:hidden;" frameborder="0"></iframe>
+
+
 
 
 
