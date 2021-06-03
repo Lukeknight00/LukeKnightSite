@@ -14,25 +14,25 @@ tags:
   - P5.js
 ---
 
-### My p5 JS sketches from the first couple days of learning the library 
+### My p5 JS sketches from the first couple days of learning the library 
 
- Click to start a timer.
+ Click to start a timer.
 
-<iframe src="https://editor.p5js.org/Lukeknight00/embed/5vdbGs2Mn"style="min-width:100%;width:50vw;height:30vh;overflow:hidden;" frameborder="0"  > </iframe>           
+<iframe src="https://editor.p5js.org/Lukeknight00/embed/5vdbGs2Mn"style="min-width:100%;width:50vw;height:30vh;overflow:hidden;" frameborder="0"  > </iframe>           
 
 ### This was my initial welcome animation on my old website
 
 <iframe src="https://editor.p5js.org/Lukeknight00/embed/yRjH7Z-kL" style="min-width:100%;width:50vw;height:60vh;overflow:hidden;" frameborder="0" ></iframe>
 
-### These flies will avoid each other unless they are alone, then they rejoin the group. In effect it is a (bad)uniform random distribution simulator.  
+### These flies will avoid each other unless they are alone, then they rejoin the group. In effect it is a (bad) uniform random distribution simulator.  
 
 <iframe src="https://editor.p5js.org/Lukeknight00/embed/6G1mr0Sb3" style="min-width:100%;width:50vw;height:60vh;overflow:hidden;" frameborder="0" ></iframe>
 
-### This was on the way to the flys, these are Fleyes! It was before there was proper avoidance, also an experiment with trails 
+### This was on the way to the flys, these are Fleyes! It was before there was proper avoidance, also an experiment with trails 
 
 <iframe src="https://editor.p5js.org/Lukeknight00/embed/aKCnGMrPc"style="min-width:100%;width:70vw;height:80vh;overflow:hidden;" frameborder="0"></iframe>
 
-### I used gaussian noise, and a friends help to make some cool color maps.  
+### I used gaussian noise, and a friends help to make some cool color maps.  
 
 <iframe src="https://editor.p5js.org/Lukeknight00/embed/qwQZj4vZG"style="min-width:100%;width:100vw;min-height:100%;height:100vh;overflow:hidden; margin-left:-15vw" frameborder="0"></iframe>
 
