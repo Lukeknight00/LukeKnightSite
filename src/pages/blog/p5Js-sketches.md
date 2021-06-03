@@ -14,9 +14,9 @@ tags:
   - P5.js
 ---
 
-<h2>My p5 JS sketches from the first couple days of learning the library</h2>
+### My p5 JS sketches from the first couple days of learning the library 
 
-                Click to start a timer.
+ Click to start a timer.
 
 <iframe src="https://editor.p5js.org/Lukeknight00/embed/5vdbGs2Mn"style="min-width:100%;width:50vw;height:30vh;overflow:hidden;" frameborder="0"  > </iframe>           
 
@@ -28,7 +28,7 @@ tags:
 
 <iframe src="https://editor.p5js.org/Lukeknight00/embed/6G1mr0Sb3" style="min-width:100%;width:50vw;height:60vh;overflow:hidden;" frameborder="0" ></iframe>
 
-### This was on the way to the flys, these are Fleyes! It was before there was proper avoidance, also an experiment with trails 
+### This was on the way to the flys, these are Fleyes! It was before there was proper avoidance, also an experiment with trails 
 
 <iframe src="https://editor.p5js.org/Lukeknight00/embed/aKCnGMrPc"style="min-width:100%;width:70vw;height:80vh;overflow:hidden;" frameborder="0"></iframe>
 
@@ -39,3 +39,5 @@ tags:
 #### Colorful spheres
 
 <iframe src="https://editor.p5js.org/Lukeknight00/embed/ptgdZBaEP"></iframe>
+
+---
