@@ -6,5 +6,5 @@ heading:
 subheading: a website about the {{link}}
 mainpitch:
   title: This website helps you to get to know me.
-  description: Please have a look around and get to know me!
+  description: Please have a look around and do just that!
 ---

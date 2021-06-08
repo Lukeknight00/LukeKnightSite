@@ -17,7 +17,7 @@ class LinkCycler extends React.Component {
         const { data } = this.props
         const { edges: links } = data.allMarkdownRemark
         this.setState({ IdArr : this.pushArray(links,this.state.IdArr)})//populates the array
-        this.interval = setInterval( this.ChangeID.bind(this), 1800)
+        this.interval = setInterval( this.ChangeID.bind(this), 3000)
 
     }
     componentWillUnmount() {
@@ -35,19 +35,28 @@ class LinkCycler extends React.Component {
     console.log("Current ID: " +  this.state.currentID);
 
         return( 
-            <div className="LinkTitle" style={{textAlign: "center" }}>
+            <div  fluid="md" style={{textAlign: "normal", justifyContent:"normal"}}>
                 {links && links.map(({ node: linked }) => (
-                    <div  key={linked.id}  >
+                    <div key={linked.id}  className="LinkCycleContent" >   
                         {  linked.id === this.state.currentID ? (
-                        <a href={linked.frontmatter.url} style={{color: 'black', minHeight: '50px'}}
-                            > <GatsbyImage image={getImage(linked.frontmatter.icon.childImageSharp)} alt="X" /> {linked.frontmatter.title } 
-                        </a> ) : null}
+                             <a href={linked.frontmatter.url} style={{color: 'White', minHeight: '50px'}}>
+                                 <div className="columns">
+                                    <div className="column is-6"> 
+                                        <h1 className='is-size-2'>{linked.frontmatter.title } </h1>
+                                        <p style={{fontSize: "80%"}}>{linked.frontmatter.description}</p>
+                                    </div>
+                                    <div className="column is-6"  > 
+                                    <GatsbyImage style={{width:'15vw', height:"100%"}} image={getImage(linked.frontmatter.icon.childImageSharp)} alt="X" /> 
+                                    </div>
+                                </div>
+                            </a>
+                         ) : null}
                          
                     </div> 
                     )  
                 )}
                 {  this.state.currentID === "0" ? (
-                    <p style={{ minHeight: '30px'}} > Guy who built this Website!
+                    <p style={{ minHeight: '30px'}} > Thanks for checking out my website! I built it using <a style={{color: '#7026B9'}}src="https://www.gatsbyjs.com/">Gatsby</a> and <a  style={{color: 'purple'}}src="https://graphql.org/">GraphQL</a>, and it is hosted using <a  style={{color: '#C9FA4B'}} src="https://www.netlifycms.org/">Netlify's CMS.</a>
                     </p> ) : null}  
             </div>
         )
@@ -107,9 +116,10 @@ export default () => (
                 frontmatter {
                     title
                     url
+                    description
                     icon {
                         childImageSharp {
-                            gatsbyImageData(width: 30
+                            gatsbyImageData(width: 600
                                 placeholder: BLURRED
                                 formats: [AUTO, WEBP, AVIF])
                         }

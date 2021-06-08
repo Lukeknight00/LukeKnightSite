@@ -26,44 +26,57 @@ export const IndexPageTemplate = ({
         backgroundAttachment: `fixed`,
       }}
     >
-      <div
+      <div className="columns" 
         style={{
-          display: 'flex',
-          height: '150px',
-          minWidth:'50vw',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
+                    paddingTop:'10vh',
         }}
       >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+        <div className="column is-6"
           style={{
-            boxShadow: '#2a7fffff',
-            backgroundColor: '#2a7fffff',
-            color: 'white',
+            display: 'flex',
+            height: '150px',
+            minWidth:'50vw',
+            paddingTop: '5vh',
             lineHeight: '1',
-            padding: '0.25em',
+            justifyContent: 'space-around',
+            alignItems: 'left',
+            flexDirection: 'column',
           }}
         >
-          {title}     
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              '#2a7fffff',
-            backgroundColor: '#2a7fffff',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-            colorAdjust: 100,
-          }}
-        >
-          The <LinkCycler />
-        </h3>
-        
+          <div className="column">
+            <h1
+              className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+              style={{
+                boxShadow: '#2a7fffff',
+                backgroundColor: '#2a7fffff',
+                color: 'white',
+                lineHeight: '1',
+                padding: '0.25em',
+              }}
+            >
+              {title}     
+            </h1>
+          </div> 
+        </div>
+        <div className="column is-6">
+            <h3
+              className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+              style={{
+                boxShadow:
+                  '#2a7fffff',
+                backgroundColor: '#2a7fffff',
+                color: 'white',
+                lineHeight: '1',
+                padding: '1.25em',
+                colorAdjust: 100,
+                minWidth: "50vw",
+                minHeight: "30vh",
+                justifyContent: "right"
+              }}
+            >
+               <LinkCycler />
+            </h3>
+          </div>
       </div>
     </div>
     <section className="section section--gradient" >
