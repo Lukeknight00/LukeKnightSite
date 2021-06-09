@@ -29,25 +29,25 @@ class LinkCycler extends React.Component {
     render() {
         const { data } = this.props
         const { edges: links } = data.allMarkdownRemark
-        //an array holding all the unique ID's for the links
-            //this.interval = setInterval(this.ChangeID, 1000);
+        
 
 
     console.log("Current ID: " +  this.state.currentID);
 
         return( 
-            <div  fluid="md" style={{textAlign: "normal", justifyContent:"normal"}}>
+            <div className="LinkCycleContent">
                 {links && links.map(({ node: linked }) => (
-                    <div key={linked.id}  className="LinkCycleContent" >   
+                    <div key={linked.id}   >   
                         {  linked.id === this.state.currentID ? (
-                             <a href={linked.frontmatter.url} style={{color: 'White', minHeight: '50px'}}>
+                             <a href={linked.frontmatter.url} style={{color: 'White', minHeight: '50px',}}>
                                  <div className="columns">
                                     <div className="column is-6"> 
                                         <h1 className='is-size-2'>{linked.frontmatter.title } </h1>
-                                        <p style={{fontSize: "80%"}}>{linked.frontmatter.description}</p>
+
+                                        <p style={{}}>{linked.frontmatter.description}</p>
                                     </div>
-                                    <div className="column is-6"  > 
-                                    <PreviewCompatibleImage
+                                    <div className="column is-6" style={{ textAlign: "center", paddingLeft:"5vw"}} > 
+                                    <PreviewCompatibleImage 
                                         imageInfo={{
                                         image: linked.frontmatter.icon
                                         }}
