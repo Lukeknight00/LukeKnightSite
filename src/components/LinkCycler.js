@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 
 
@@ -46,7 +47,11 @@ class LinkCycler extends React.Component {
                                         <p style={{fontSize: "80%"}}>{linked.frontmatter.description}</p>
                                     </div>
                                     <div className="column is-6"  > 
-                                    <GatsbyImage style={{width:'15vw', height:"100%"}} image={getImage(linked.frontmatter.icon.childImageSharp)} alt="X" /> 
+                                    <PreviewCompatibleImage
+                                        imageInfo={{
+                                        image: linked.frontmatter.icon
+                                        }}
+                                     />
                                     </div>
                                 </div>
                             </a>
@@ -119,10 +124,11 @@ export default () => (
                     description
                     icon {
                         childImageSharp {
-                            gatsbyImageData(width: 600
-                                placeholder: BLURRED
-                                formats: [AUTO, WEBP, AVIF])
-                        }
+                            fluid(maxWidth: 200, maxHeight: 200, quality: 100) {
+                                ...GatsbyImageSharpFluid
+                                ...GatsbyImageSharpFluidLimitPresentationSize
+                              }
+                            }
                  
                     }
                 }
