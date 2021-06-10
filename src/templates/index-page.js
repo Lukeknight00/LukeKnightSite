@@ -34,7 +34,7 @@ export const IndexPageTemplate = ({
         <div className="column is-6"
           style={{
             display: 'flex',
-            height: '150px',
+            //height: '150px',
             minWidth:'50vw',
             paddingTop: '5vh',
             lineHeight: '1',
@@ -47,6 +47,7 @@ export const IndexPageTemplate = ({
             <h1
               className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
               style={{
+                position: 'sticky',
                 boxShadow: '#2a7fffff',
                 backgroundColor: '#2a7fffff',
                 color: 'white',
@@ -68,6 +69,7 @@ export const IndexPageTemplate = ({
                 color: 'white',
                 lineHeight: '1',
                 padding: '1.25em',
+                marginBottom:'10vh',
                 colorAdjust: 100,
                 minWidth: "50vw",
                 minHeight: "30vh",

@@ -40,11 +40,11 @@ class LinkCycler extends React.Component {
                     <div key={linked.id}   >   
                         {  linked.id === this.state.currentID ? (
                              <a href={linked.frontmatter.url} style={{color: 'White', minHeight: '50px',}}>
-                                 <div className="columns">
+                                 <div className="columns" style={{gutterBottom:"20vh"}}>
                                     <div className="column is-6"> 
                                         <h1 className='is-size-2'>{linked.frontmatter.title } </h1>
 
-                                        <p style={{}}>{linked.frontmatter.description}</p>
+                                        <h3 style={{textSizeAdjust:"80%"}}>{linked.frontmatter.description}</h3>
                                     </div>
                                     <div className="column is-6" style={{ textAlign: "center", paddingLeft:"5vw"}} > 
                                     <PreviewCompatibleImage 
@@ -61,8 +61,8 @@ class LinkCycler extends React.Component {
                     )  
                 )}
                 {  this.state.currentID === "0" ? (
-                    <p style={{ minHeight: '30px'}} > Thanks for checking out my website! I built it using <a style={{color: '#7026B9'}}src="https://www.gatsbyjs.com/">Gatsby</a> and <a  style={{color: 'purple'}}src="https://graphql.org/">GraphQL</a>, and it is hosted using <a  style={{color: '#C9FA4B'}} src="https://www.netlifycms.org/">Netlify's CMS.</a>
-                    </p> ) : null}  
+                    <h3 style={{ minHeight: '30px'}} > Thanks for checking out my website! I built it using <a style={{color: '#7026B9'}} href="https://www.gatsbyjs.com/">Gatsby</a> and <a  style={{color: 'purple'}} href="https://graphql.org/">GraphQL</a>, and it is hosted using <a  style={{color: '#C9FA4B'}} href="https://www.netlifycms.org/">Netlify's CMS.</a>
+                    </h3> ) : null}  
             </div>
         )
 
